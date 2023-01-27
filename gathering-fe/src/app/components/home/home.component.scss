@@ -1,0 +1,48 @@
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    color: white;
+
+    background: linear-gradient(102.92deg, #933CBC 45.34%, #4E0D6C 68.62%);
+}
+
+.split {
+    width: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 50%;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+// create media tag for mobile
+@media (max-width: 768px) {
+    .container-fluid {
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .split {
+        width: 100%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
